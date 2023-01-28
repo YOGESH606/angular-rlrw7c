@@ -1,0 +1,6 @@
+<app-demo></app-demo>
+<app-customer-list #customer></app-customer-list>
+<h2>Parent Component </h2>
+<p>you have selected {{customer.selectedCustomer?.name}}</p>
+<button (click)="getRef(customer)">ref</button>
+<hr>
