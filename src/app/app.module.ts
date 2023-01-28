@@ -21,6 +21,11 @@ import { DemoComponent } from './PROCADEMY/TemplateReference/demo/demo.component
 import { CustomerListComponent } from './PROCADEMY/TemplateReference/customer-list/customer-list.component';
 import { VCChildComponent } from './PROCADEMY/ViewChild/vc-child/vc-child.component';
 import { VCParentComponent } from './PROCADEMY/ViewChild/vc-parent/vc-parent.component';
+import { CBParentComponent } from './PROCADEMY/CustomBinding/cb-parent/cb-parent.component';
+import { HeaderComponent } from './PROCADEMY/CustomBinding/header/header.component';
+import { FilterComponent } from './PROCADEMY/CustomBinding/filter/filter.component';
+import { CourcesComponent } from './PROCADEMY/CustomBinding/courses/courses.component';
+import { SearchComponent } from './PROCADEMY/CustomBinding/search/search.component';
 
 
 @NgModule({
@@ -47,6 +52,12 @@ import { VCParentComponent } from './PROCADEMY/ViewChild/vc-parent/vc-parent.com
     //viewChild
     VCChildComponent,
     VCParentComponent,
+    //customBinding
+    CBParentComponent,
+    HeaderComponent,
+    FilterComponent,
+    CourcesComponent,
+    SearchComponent
 
   ],
   bootstrap: [AppComponent],
