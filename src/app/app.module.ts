@@ -29,6 +29,8 @@ import { SearchComponent } from './PROCADEMY/CustomBinding/search/search.compone
 import { VEComp1Component } from './PROCADEMY/ViewEncapsulation/ve-comp1/ve-comp1.component';
 import { VEComp2Component } from './PROCADEMY/ViewEncapsulation/ve-comp2/ve-comp2.component';
 import { VEComp3Component } from './PROCADEMY/ViewEncapsulation/ve-comp3/ve-comp3.component';
+import { NgContentParentComponent } from './PROCADEMY/ngContent/ng-content-parent/ng-content-parent.component';
+import { NgContentChildComponent } from './PROCADEMY/ngContent/ng-content-child/ng-content-child.component';
 
 
 @NgModule({
@@ -65,6 +67,10 @@ import { VEComp3Component } from './PROCADEMY/ViewEncapsulation/ve-comp3/ve-comp
     VEComp1Component,
     VEComp2Component,
     VEComp3Component,
+    //ngContent
+    NgContentParentComponent,
+    NgContentChildComponent
+
 
   ],
   bootstrap: [AppComponent],
