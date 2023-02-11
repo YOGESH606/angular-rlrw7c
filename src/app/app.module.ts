@@ -31,6 +31,8 @@ import { VEComp2Component } from './PROCADEMY/ViewEncapsulation/ve-comp2/ve-comp
 import { VEComp3Component } from './PROCADEMY/ViewEncapsulation/ve-comp3/ve-comp3.component';
 import { NgContentParentComponent } from './PROCADEMY/ngContent/ng-content-parent/ng-content-parent.component';
 import { NgContentChildComponent } from './PROCADEMY/ngContent/ng-content-child/ng-content-child.component';
+import { HooksParentComponent } from './PROCADEMY/Hooks/hooks-parent/hooks-parent.component';
+import { HooksDemoComponent } from './PROCADEMY/Hooks/hooks-demo/hooks-demo.component';
 
 
 @NgModule({
@@ -69,7 +71,10 @@ import { NgContentChildComponent } from './PROCADEMY/ngContent/ng-content-child/
     VEComp3Component,
     //ngContent
     NgContentParentComponent,
-    NgContentChildComponent
+    NgContentChildComponent,
+    //Hokks
+    HooksParentComponent,
+    HooksDemoComponent
 
 
   ],
