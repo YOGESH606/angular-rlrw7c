@@ -33,6 +33,8 @@ import { NgContentParentComponent } from './PROCADEMY/ngContent/ng-content-paren
 import { NgContentChildComponent } from './PROCADEMY/ngContent/ng-content-child/ng-content-child.component';
 import { HooksParentComponent } from './PROCADEMY/Hooks/hooks-parent/hooks-parent.component';
 import { HooksDemoComponent } from './PROCADEMY/Hooks/hooks-demo/hooks-demo.component';
+import { CcParentComponent, CcParentComponent } from './PROCADEMY/ContentChild/cc-parent/cc-parent.component';
+import { CcChildComponent } from './PROCADEMY/ContentChild/cc-child/cc-child.component';
 
 
 @NgModule({
@@ -72,9 +74,12 @@ import { HooksDemoComponent } from './PROCADEMY/Hooks/hooks-demo/hooks-demo.comp
     //ngContent
     NgContentParentComponent,
     NgContentChildComponent,
-    //Hokks
+    //Hooks
     HooksParentComponent,
-    HooksDemoComponent
+    HooksDemoComponent,
+    //contentChild
+    CcParentComponent,
+    CcChildComponent
 
 
   ],
