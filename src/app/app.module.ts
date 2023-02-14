@@ -37,6 +37,7 @@ import { CcParentComponent, CcParentComponent } from './PROCADEMY/ContentChild/c
 import { CcChildComponent } from './PROCADEMY/ContentChild/cc-child/cc-child.component';
 import { SetbackgroundDirective } from './PROCADEMY/CustomDirective/setbackground.directive';
 import { CdParentComponent } from './PROCADEMY/CustomDirective/cd-parent/cd-parent.component';
+import { HighlightDirective } from './PROCADEMY/CustomDirective/highlight.directive';
 
 
 @NgModule({
@@ -85,6 +86,8 @@ import { CdParentComponent } from './PROCADEMY/CustomDirective/cd-parent/cd-pare
     //Custom Directive
     SetbackgroundDirective,
     CdParentComponent,
+    //renderer
+    HighlightDirective,
 
 
   ],
