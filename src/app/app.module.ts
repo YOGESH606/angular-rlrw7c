@@ -35,6 +35,8 @@ import { HooksParentComponent } from './PROCADEMY/Hooks/hooks-parent/hooks-paren
 import { HooksDemoComponent } from './PROCADEMY/Hooks/hooks-demo/hooks-demo.component';
 import { CcParentComponent, CcParentComponent } from './PROCADEMY/ContentChild/cc-parent/cc-parent.component';
 import { CcChildComponent } from './PROCADEMY/ContentChild/cc-child/cc-child.component';
+import { SetbackgroundDirective } from './PROCADEMY/CustomDirective/setbackground.directive';
+import { CdParentComponent } from './PROCADEMY/CustomDirective/cd-parent/cd-parent.component';
 
 
 @NgModule({
@@ -79,7 +81,10 @@ import { CcChildComponent } from './PROCADEMY/ContentChild/cc-child/cc-child.com
     HooksDemoComponent,
     //contentChild
     CcParentComponent,
-    CcChildComponent
+    CcChildComponent,
+    //Custom Directive
+    SetbackgroundDirective,
+    CdParentComponent,
 
 
   ],
