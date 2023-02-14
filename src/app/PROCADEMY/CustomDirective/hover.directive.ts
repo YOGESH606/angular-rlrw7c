@@ -1,3 +1,4 @@
+//HostListener in Angular
 import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Directive({
@@ -5,7 +6,7 @@ import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 })
 export class HoverDirective {
   constructor(private element: ElementRef, private renderer: Renderer2) {}
-
+  //The HostListener decorator listen to the DOM event on the host element, and it react to that event by executing event handler method.
   @HostListener('mouseenter') onmousehover() {
     this.renderer.setStyle(this.element.nativeElement, 'margin', '5px 10px');
     this.renderer.setStyle(this.element.nativeElement, 'padding', '3px 30px');

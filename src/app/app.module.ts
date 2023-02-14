@@ -39,6 +39,7 @@ import { SetbackgroundDirective } from './PROCADEMY/CustomDirective/setbackgroun
 import { CdParentComponent } from './PROCADEMY/CustomDirective/cd-parent/cd-parent.component';
 import { HighlightDirective } from './PROCADEMY/CustomDirective/highlight.directive';
 import { HoverDirective } from './PROCADEMY/CustomDirective/hover.directive';
+import { BetterHighlightDirective } from './PROCADEMY/CustomDirective/better-highlight.directive';
 
 
 @NgModule({
@@ -89,8 +90,10 @@ import { HoverDirective } from './PROCADEMY/CustomDirective/hover.directive';
     CdParentComponent,
     //renderer
     HighlightDirective,
-    //hostListener
+    //@HostListener
     HoverDirective,
+    //@HostBinding
+    BetterHighlightDirective,
 
 
   ],

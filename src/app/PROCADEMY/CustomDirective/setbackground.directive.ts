@@ -1,5 +1,5 @@
+//Custom attribute Directive in Angular
 import { Directive, ElementRef } from '@angular/core';
-
 @Directive({
   selector: '[appSetbackground]',
 })
