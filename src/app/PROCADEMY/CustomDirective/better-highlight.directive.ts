@@ -4,6 +4,7 @@ import {
   ElementRef,
   HostBinding,
   HostListener,
+  Input,
   Renderer2,
 } from '@angular/core';
 
@@ -13,8 +14,16 @@ import {
 export class BetterHighlightDirective {
   constructor(private element: ElementRef, private renderer: Renderer2) {}
   //The @HostBinding decorator binds a host element property to a variable in a directive or a component.
-  @HostBinding('style.backgroundColor') background: string = 'transparent';
+  @Input() defaultColor : string = 'transparent';
+  @Input('appBetterHighlight') highlightColor : string ='pink';
+  @Input() title: string = 'This is Title';
+
+  @HostBinding('style.backgroundColor') background: string = this.defaultColor;
   @HostBinding('style.border') border: string = 'none';
+
+  ngOnInit(){
+    this.background = this.defaultColor;
+  }
 
   @HostListener('mouseenter') mouseenter() {
     this.background = 'pink';
@@ -25,4 +34,8 @@ export class BetterHighlightDirective {
     this.background = 'transparent';
     this.border = 'none';
   }
+}
+
+function ngOnInit() {
+throw new Error('Function not implemented.');
 }
