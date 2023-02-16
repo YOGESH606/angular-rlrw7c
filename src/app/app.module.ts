@@ -33,13 +33,15 @@ import { NgContentParentComponent } from './PROCADEMY/ngContent/ng-content-paren
 import { NgContentChildComponent } from './PROCADEMY/ngContent/ng-content-child/ng-content-child.component';
 import { HooksParentComponent } from './PROCADEMY/Hooks/hooks-parent/hooks-parent.component';
 import { HooksDemoComponent } from './PROCADEMY/Hooks/hooks-demo/hooks-demo.component';
-import { CcParentComponent, CcParentComponent } from './PROCADEMY/ContentChild/cc-parent/cc-parent.component';
+import { CcParentComponent } from './PROCADEMY/ContentChild/cc-parent/cc-parent.component';
 import { CcChildComponent } from './PROCADEMY/ContentChild/cc-child/cc-child.component';
 import { SetbackgroundDirective } from './PROCADEMY/CustomDirective/setbackground.directive';
 import { CdParentComponent } from './PROCADEMY/CustomDirective/cd-parent/cd-parent.component';
 import { HighlightDirective } from './PROCADEMY/CustomDirective/highlight.directive';
 import { HoverDirective } from './PROCADEMY/CustomDirective/hover.directive';
 import { BetterHighlightDirective } from './PROCADEMY/CustomDirective/better-highlight.directive';
+import { ClassDirective } from './PROCADEMY/CustomDirective/class.directive';
+
 
 
 @NgModule({
@@ -94,8 +96,8 @@ import { BetterHighlightDirective } from './PROCADEMY/CustomDirective/better-hig
     HoverDirective,
     //@HostBinding
     BetterHighlightDirective,
-
-
+    //custom appclass directive
+    ClassDirective,
   ],
   bootstrap: [AppComponent],
 })

@@ -36,6 +36,4 @@ export class BetterHighlightDirective {
   }
 }
 
-function ngOnInit() {
-throw new Error('Function not implemented.');
-}
+
