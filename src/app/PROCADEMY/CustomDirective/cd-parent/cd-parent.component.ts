@@ -8,5 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class CdParentComponent implements OnInit {
   constructor() {}
   title = 'CustomDirectives';
+  active: boolean = true;
   ngOnInit() {}
 }
