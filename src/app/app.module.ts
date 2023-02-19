@@ -41,6 +41,8 @@ import { HighlightDirective } from './PROCADEMY/CustomDirective/highlight.direct
 import { HoverDirective } from './PROCADEMY/CustomDirective/hover.directive';
 import { BetterHighlightDirective } from './PROCADEMY/CustomDirective/better-highlight.directive';
 import { ClassDirective } from './PROCADEMY/CustomDirective/class.directive';
+import { DeParentComponent } from './PROCADEMY/DirectiveExample/de-parent/de-parent.component';
+import { DeHighlightDirective } from './PROCADEMY/DirectiveExample/de-parent/de-highlight.directive';
 
 
 
@@ -98,6 +100,9 @@ import { ClassDirective } from './PROCADEMY/CustomDirective/class.directive';
     BetterHighlightDirective,
     //custom appclass directive
     ClassDirective,
+    //Condtional Directive in angulR
+    DeParentComponent,
+    DeHighlightDirective,
   ],
   bootstrap: [AppComponent],
 })
