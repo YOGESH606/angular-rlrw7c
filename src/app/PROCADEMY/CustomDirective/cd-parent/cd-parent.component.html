@@ -1,20 +1,66 @@
-<h3 class="container" appSetbackground> This is custom binding Example </h3>
+<h3 class="container" appSetbackground>This is custom binding Example</h3>
 <div class="container" appSetbackground>
-  <p>This is a demo HTML content to understnd custom attribute directive in angular.</p>
+  <p>
+    This is a demo HTML content to understnd custom attribute directive in
+    angular.
+  </p>
 </div>
 
 <div appHighlight appHover>
-<p >This is a demo HTML content to understnd custom attribute directive in angular.</p>
+  <p>
+    This is a demo HTML content to understnd custom attribute directive in
+    angular.
+  </p>
 </div>
 
-<div class='container' [appBetterHighlight]="'red'" [defaultColor]="'yellow'" [title]="'Example Title'">
-<p >This is a demo HTML content to understnd @HostBinding in angular.</p>
+<div
+  class="container"
+  [appBetterHighlight]="'red'"
+  [defaultColor]="'yellow'"
+  [title]="'Example Title'"
+>
+  <p>This is a demo HTML content to understnd @HostBinding in angular.</p>
 </div>
 
-<div [appClass]="{container: true, 'change-font': true}">
-   <p> This is demo HTML content to understand how to create custom ngClass directive in Angular.</p>
+<div [appClass]="{ container: true, 'change-font': true }">
+  <p>
+    This is demo HTML content to understand how to create custom ngClass
+    directive in Angular.
+  </p>
 </div>
 
-<div class='container' [appStyle]="{backgroundColor:active ?'Green':'Red', color:'white'}">
-<p> This is demo HTML content to understand how to create custom ngStyle directive in Angular.</p>
+<div
+  class="container"
+  [appStyle]="{ backgroundColor: active ? 'Green' : 'Red', color: 'white' }"
+>
+  <p>
+    This is demo HTML content to understand how to create custom ngStyle
+    directive in Angular.
+  </p>
 </div>
+
+<button class="btn btn-notice" (click)="DisplayNotice()">Show Notice</button>
+<!-- <div class="info-container notice" *ngIf="display; else myVar">
+  <h3>This is important notice</h3>
+  <p>This is a notice issued for all website user!</p>
+</div>
+<ng-template #myVar>
+  <p>This is an Example Paragraph.</p>
+</ng-template> -->
+
+<!-- 
+  When we use structural directive with an asterick before it internally, angular creates a template and on that template it uses that structural directive just like any other stuructural directive and it wraps view within that template. The view which we want to display or remove from DOM
+
+  So we write above code with structural directive and angular covert above code in following format.
+ -->
+
+<ng-template [ngIf]="display" [ngIfElse]="myVar">
+  <div class="info-container notice" *ngIf="display; else myVar">
+    <h3>This is important notice</h3>
+    <p>This is a notice issued for all website user!</p>
+  </div>
+</ng-template>
+
+<ng-template #myVar>
+  <p>This is an Example Paragraph.</p>
+</ng-template>
