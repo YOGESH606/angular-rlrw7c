@@ -45,6 +45,10 @@ import { DeParentComponent } from './PROCADEMY/DirectiveExample/de-parent/de-par
 import { DeHighlightDirective } from './PROCADEMY/DirectiveExample/de-parent/de-highlight.directive';
 import { StyleDirective } from './PROCADEMY/CustomDirective/style.directive';
 import { IfDirective } from './PROCADEMY/CustomDirective/if.directive';
+import { EnrollService } from './PROCADEMY/subscribe-service/services/enroll.service';
+import { AngularComponent } from './PROCADEMY/subscribe-service/angular/angular.component';
+import { JavascriptComponent } from './PROCADEMY/subscribe-service/javascript/javascript.component';
+import { SubscribeServiceComponent } from './PROCADEMY/subscribe-service/subscribe-service.component';
 
 
 
@@ -109,8 +113,13 @@ import { IfDirective } from './PROCADEMY/CustomDirective/if.directive';
     StyleDirective,
     //Custom structural Directive
     IfDirective,
+    //Creating a service
+    AngularComponent,
+    JavascriptComponent,
+    SubscribeServiceComponent,
 
   ],
+  providers: [EnrollService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
