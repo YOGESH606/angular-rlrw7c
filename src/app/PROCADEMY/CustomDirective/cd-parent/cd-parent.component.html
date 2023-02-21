@@ -64,3 +64,10 @@
 <ng-template #myVar>
   <p>This is an Example Paragraph.</p>
 </ng-template>
+
+<button class="btn btn-notice" (click)="Display_CSD()">show component</button>
+<div class="info-container notice" *appIf="displayCSD">
+  <h3>This is important notice</h3>
+  <p>Testing custom structural directive.</p>
+  Test
+</div>

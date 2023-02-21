@@ -10,9 +10,13 @@ export class CdParentComponent implements OnInit {
   title = 'CustomDirectives';
   active: boolean = true;
   display: boolean = false;
+  displayCSD: boolean = false;
   ngOnInit() {}
 
-  DisplayNotice(): void{
+  DisplayNotice(): void {
     this.display = true;
+  }
+  Display_CSD(): void {
+    this.displayCSD = true;
   }
 }
