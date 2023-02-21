@@ -57,7 +57,7 @@
 <ng-template [ngIf]="display" [ngIfElse]="myVar">
   <div class="info-container notice" *ngIf="display; else myVar">
     <h3>This is important notice</h3>
-    <p>This is a notice issued for all website user!</p>
+    <p>Testing Structural Directive!</p>
   </div>
 </ng-template>
 
@@ -68,5 +68,21 @@
 <button class="btn btn-notice" (click)="Display_CSD()">show component</button>
 <div class="info-container notice" *appIf="displayCSD">
   <h3>Custom Structural Directive</h3>
-  <p>Testing custom structural directive.</p>
+  <p>Testing CUSTOM structural directive!</p>
+</div>
+
+<div class="container" [ngSwitch]="occupation">
+  <p *ngSwitchCase="'teacher'">
+    This paragraph will be displayed when occupation is teacher.
+  </p>
+  <p *ngSwitchCase="'designer'">
+    This paragraph will be displayed when occupation is designer.
+  </p>
+  <p *ngSwitchCase="'lawyer'">
+    This paragraph will be displayed when occupation is lawyer.
+  </p>
+  <p *ngSwitchDefault>
+    This paragraph is default and will be displayed if no case matches switch
+    expression
+  </p>
 </div>

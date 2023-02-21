@@ -11,6 +11,8 @@ export class CdParentComponent implements OnInit {
   active: boolean = true;
   display: boolean = false;
   displayCSD: boolean = false;
+  occupation: string = 'teacher';
+  
   ngOnInit() {}
 
   DisplayNotice(): void {
