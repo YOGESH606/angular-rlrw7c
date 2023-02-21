@@ -5,7 +5,7 @@ import { EnrollService } from './services/enroll.service';
   selector: 'app-subscribe-service',
   templateUrl: './subscribe-service.component.html',
   styleUrls: ['./subscribe-service.component.css'],
-  providers: [EnrollService],
+  //providers: [EnrollService],
 })
 
 export class SubscribeServiceComponent implements OnInit {
