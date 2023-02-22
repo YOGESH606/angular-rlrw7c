@@ -52,6 +52,7 @@ import { SubscribeServiceComponent } from './PROCADEMY/subscribe-service/subscri
 import { AdduserComponent } from './PROCADEMY/user-service/adduser/adduser.component';
 import { UserService } from './PROCADEMY/user-service/services/user.service';
 import { UserServiceComponent } from './PROCADEMY/user-service/user-service.component';
+import { LoggerService } from './PROCADEMY/user-service/services/logger.service';
 
 
 
@@ -122,11 +123,11 @@ import { UserServiceComponent } from './PROCADEMY/user-service/user-service.comp
     SubscribeServiceComponent,
     //Creating data service
     AdduserComponent,
-    UserServiceComponent
+    UserServiceComponent,
 
 
   ],
-  providers: [EnrollService, UserService],
+  providers: [EnrollService, UserService, LoggerService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
