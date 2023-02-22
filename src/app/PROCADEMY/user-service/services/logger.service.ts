@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class LoggerService {
 
   LogMessage(name: string, status: string){
-    console.log('A user with the username '+ name +'with status'+ status + 'has been added')
+    console.log('A user with the username "'+ name +'" with status "'+ status + '" has been added')
   }
 
 }
