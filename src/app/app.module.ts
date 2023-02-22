@@ -49,6 +49,9 @@ import { EnrollService } from './PROCADEMY/subscribe-service/services/enroll.ser
 import { AngularComponent } from './PROCADEMY/subscribe-service/angular/angular.component';
 import { JavascriptComponent } from './PROCADEMY/subscribe-service/javascript/javascript.component';
 import { SubscribeServiceComponent } from './PROCADEMY/subscribe-service/subscribe-service.component';
+import { AdduserComponent } from './PROCADEMY/user-service/adduser/adduser.component';
+import { UserService } from './PROCADEMY/user-service/services/user.service';
+import { UserServiceComponent } from './PROCADEMY/user-service/user-service.component';
 
 
 
@@ -117,9 +120,13 @@ import { SubscribeServiceComponent } from './PROCADEMY/subscribe-service/subscri
     AngularComponent,
     JavascriptComponent,
     SubscribeServiceComponent,
+    //Creating data service
+    AdduserComponent,
+    UserServiceComponent
+
 
   ],
-  providers: [EnrollService],
+  providers: [EnrollService, UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
