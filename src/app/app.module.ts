@@ -53,6 +53,11 @@ import { AdduserComponent } from './PROCADEMY/user-service/adduser/adduser.compo
 import { UserService } from './PROCADEMY/user-service/services/user.service';
 import { UserServiceComponent } from './PROCADEMY/user-service/user-service.component';
 import { LoggerService } from './PROCADEMY/user-service/services/logger.service';
+import { UserServiceDetails } from './PROCADEMY/user-detail-service/services/user.service';
+import { AllUsersComponent } from './PROCADEMY/user-detail-service/all-users/all-users.component';
+import { UserDetailComponent } from './PROCADEMY/user-detail-service/user-detail/user-detail.component';
+import { UserDetailServiceComponent } from './PROCADEMY/user-detail-service/user-detail-service.component';
+
 
 
 
@@ -124,10 +129,13 @@ import { LoggerService } from './PROCADEMY/user-service/services/logger.service'
     //Creating data service
     AdduserComponent,
     UserServiceComponent,
-
+    //Component interaction with service
+    AllUsersComponent,
+    UserDetailComponent,
+    UserDetailServiceComponent,
 
   ],
-  providers: [EnrollService, UserService, LoggerService],
+  providers: [EnrollService, UserService, LoggerService, UserServiceDetails],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
