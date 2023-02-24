@@ -57,6 +57,7 @@ import { UserServiceDetails } from './PROCADEMY/user-detail-service/services/use
 import { AllUsersComponent } from './PROCADEMY/user-detail-service/all-users/all-users.component';
 import { UserDetailComponent } from './PROCADEMY/user-detail-service/user-detail/user-detail.component';
 import { UserDetailServiceComponent } from './PROCADEMY/user-detail-service/user-detail-service.component';
+import { AngularObservablesComponent } from './PROCADEMY/angular-observables/angular-observables.component';
 
 
 
@@ -133,6 +134,8 @@ import { UserDetailServiceComponent } from './PROCADEMY/user-detail-service/user
     AllUsersComponent,
     UserDetailComponent,
     UserDetailServiceComponent,
+    //Observable in Angular
+    AngularObservablesComponent,
 
   ],
   providers: [EnrollService, UserService, LoggerService, UserServiceDetails],
