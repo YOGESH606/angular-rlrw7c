@@ -58,6 +58,10 @@ import { AllUsersComponent } from './PROCADEMY/user-detail-service/all-users/all
 import { UserDetailComponent } from './PROCADEMY/user-detail-service/user-detail/user-detail.component';
 import { UserDetailServiceComponent } from './PROCADEMY/user-detail-service/user-detail-service.component';
 import { AngularObservablesComponent } from './PROCADEMY/angular-observables/angular-observables.component';
+import { DataService } from './PROCADEMY/obserables-subject/data.service';
+import { Comp2Component } from './PROCADEMY/obserables-subject/comp2/comp2.component';
+import { Comp1Component } from './PROCADEMY/obserables-subject/comp1/comp1.component';
+import { ObserablesSubjectComponent } from './PROCADEMY/obserables-subject/obserables-subject.component';
 
 
 
@@ -136,9 +140,14 @@ import { AngularObservablesComponent } from './PROCADEMY/angular-observables/ang
     UserDetailServiceComponent,
     //Observable in Angular
     AngularObservablesComponent,
+    //observables-subject in angular
+    Comp1Component,
+    Comp2Component,
+    ObserablesSubjectComponent,
+
 
   ],
-  providers: [EnrollService, UserService, LoggerService, UserServiceDetails],
+  providers: [EnrollService, UserService, LoggerService, UserServiceDetails,DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
