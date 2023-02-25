@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from, Observable, of } from 'rxjs';
+import { filter, from, map, Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-angular-observables',
@@ -63,8 +63,27 @@ export class AngularObservablesComponent implements OnInit {
     //------------------------------------------------------------------------------------
   */
 
+  //Understanding operator of RxJS
+  /*
+  transformedObs = this.myObservable.pipe(map((val)=>{
+    return val*5;
+  }))
+
+  filteredObs = this.transformedObs.pipe(filter((val)=>{
+    return val >= 30;
+  }))
+
+  Or we can write it as below
+  */
+
+  transformedObs = this.myObservable.pipe(map((val)=>{
+    return val*5;
+  }),filter((val)=>{
+    return val >= 30;
+  }))
+
   ngOnInit() {
-    this.myObservable.subscribe((val)=>{
+    this.transformedObs.subscribe((val)=>{
       console.log(val)
     },(error)=>{
       alert(error)
